@@ -1,3 +1,13 @@
-client_id = "ab2133b6c213473c95f8eab4a734082d"
-client_secret = "800b5b3a8b6c46c69a96b3f9ba519192"
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+client_id = os.getenv("CLIENT_ID")
+client_secret = os.getenv("CLIENT_SECRET")
+
+print(client_id, client_secret)
+
+"""
+Ran into trouble with the .env . Worked together on this code as a group while following along with a video.
+"""
